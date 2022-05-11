@@ -1,8 +1,29 @@
 # Contributing
 
-This document provides guidelines for contributing to the module.
+We'd love to accept your patches and contributions to this project. There are
+just a few small guidelines you need to follow.
 
-## Dependencies
+## Contributor License Agreement
+
+Contributions to this project must be accompanied by a Contributor License
+Agreement (CLA). You (or your employer) retain the copyright to your
+contribution; this simply gives us permission to use and redistribute your
+contributions as part of the project. Head over to
+<https://cla.developers.google.com/> to see your current agreements on file or
+to sign a new one.
+
+You generally only need to submit a CLA once, so if you've already submitted one
+(even if it was for a different project), you probably don't need to do it
+again.
+
+## Code Reviews
+
+All submissions, including submissions by project members, require review. We
+use GitHub pull requests for this purpose. Consult
+[GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
+information on using pull requests.
+
+## Development
 
 The following dependencies must be installed on the development system:
 
@@ -89,12 +110,12 @@ With these settings in place, you can prepare a test project using Docker:
 make docker_test_prepare
 ```
 
-### Noninteractive Execution
+#### Noninteractive Execution
 
 Run `make docker_test_integration` to test all of the example modules
 noninteractively, using the prepared test project.
 
-### Interactive Execution
+#### Interactive Execution
 
 1. Run `make docker_run` to start the testing Docker container in
    interactive mode.
@@ -109,12 +130,12 @@ noninteractively, using the prepared test project.
 1. Run `kitchen_do destroy <EXAMPLE_NAME>` to destroy the example module
    state.
 
-## Linting and Formatting
+### Linting and Formatting
 
 Many of the files in the repository can be linted or formatted to
 maintain a standard of quality.
 
-### Execution
+#### Execution
 
 Run `make docker_test_lint`.
 
